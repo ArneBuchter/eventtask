@@ -11,6 +11,18 @@ Dette er min opgave om at bruge event.
         istrusted  :     console.log(e.isTrusted);
                 
         finde divs størrelse   :      console.log(e.target.getBoundingClientRect())
+       
+       
+        
+        returnValue  :   console.log(e.returnValue);
+        
+        bubbles   :   console.log(e.bubbles);
+        
+        timestamp  :   console.log(e.timeStamp);
+        
+        InputDeviceCapabilities  :   console.log(e.sourceCapabilities)
+        
+        NamedNodeMap    :   console.log(e.srcElement.attributes)
         
         
         
