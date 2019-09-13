@@ -15,3 +15,5 @@ Dette er min opgave om at bruge event.
         
         
         finde divs størrelse 
+        
+         De blå prikker inde i min hovedDiv er også Div'er. det betyder at nogle opgaver vil give fejl hvis der bliver trykket på et                blåt område.
