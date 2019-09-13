@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .div{
+            position: relative;
+            margin: auto;
+            margin-top: 8rem;
+            display: flex;
+            justify-content: space-evenly;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border: solid 2px;
+        }
+
+        .div_two{
+            margin-top: 10px;
+            height: 10px;
+            width: 10px;
+            border: solid 1px;
+            background-color: blue;
+        }
+
+        .div_tre{
+            height: 10px;
+            width: 10px;
+            align-self: center;
+            justify-self: center;
+            border: solid 1px;
+            background-color: blue;
+        }
+
+        .div_fire{
+            position: absolute;
+            width: 50px;
+            height: 10px;
+            border: solid 1px;
+            background-color: blue;
+            bottom: 10px;
+            left: 25px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="div">
+            <div class="div_two"></div>
+
+            <div class="div_tre"></div>
+
+            <div class="div_two"></div>
+
+            <div class="div_fire"></div>
+    </div>
+
+    <script>
+        // opg.1 diverne inde i .div
+        //bodyens Class="div_fire" to element
+        //href via path
+        //istrusted
+        // finde divs størrelse 
+
+        //returnValue
+        //bubbles
+        //timestamp
+        //InputDeviceCapabilities
+        //NamedNodeMap
+
+        //platform
+        //localstorage
+        //clientX
+        //stylePropertyMap
+        //view blur
+
+        //childElementCount
+        //document head
+        //blur
+        //dataset
+        //type
+    
+    let opgave = document.querySelector('div');
+
+    opgave.addEventListener('click', function(e) {
+
+        // opg. 1
+        console.log(e.target);
+        // opg2
+        console.log(e.path[0].children[3]);
+        //opg3
+        console.log(e.path[3].location.href);
+        //opg4
+        console.log(e.isTrusted);
+        //opg5
+        console.log(e.target.getBoundingClientRect()) 
+        
+        //opg 6
+        console.log(e.returnValue);
+        //opg 7
+        console.log(e.bubbles);
+        //opg 8
+        console.log(e.timeStamp);
+        //opg 9
+        console.log(e.sourceCapabilities);
+        //opg 10
+        console.log(e.srcElement.attributes);
+
+
+        //opg 11
+        console.log(e.path[4].clientInformation.platform);
+        //opg 12
+        console.log(e.path[4].localStorage);
+        //opg 13
+        console.log(e.clientX);
+        //opg14
+        console.log(e.target.attributeStyleMap);
+        //opg 15
+        console.log(e.view.blur);
+
+        //opg 16
+        console.log(e.path[0].childElementCount);
+        //opg 17
+        console.log(e.path[3].head);
+        //opg 18
+        console.log(e.target.blur);
+        //opg 19
+        console.log(e.path[1].dataset)
+        //opg 20
+        console.log(e.type)
+    })
+
+    </script>
+</body>
+</html>
